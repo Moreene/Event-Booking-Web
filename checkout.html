@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活動訂票網</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script type="module" crossorigin src="/Event-Booking-Web/assets/bootstrap-686d8bef.js"></script>
+  <link rel="stylesheet" href="/Event-Booking-Web/assets/bootstrap-8292b1e7.css">
+</head>
+
+<body class="bg-light">
+
+    <header class="header border-bottom border-dark border-3">
+    <div class="container d-flex align-items-center">
+        <a href="index.html" class="d-inline-block me-4 me-md-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo"
+                class="d-block header-img img-fluid"></a>
+        <h1 class="h2 font-primary d-none d-md-block d-md-flex align-items-md-center mb-0 me-md-6">7TAO<span
+                class="h6 font-secondary fw-bold mb-0 ms-1">活動訂票網</span></h1>
+        <div class="input-group w-55 w-md-25">
+            <input type="text" class="form-control border-2 border-dark rounded-0" placeholder="探索活動">
+            <button class="btn btn-dark search-icon" type="button"><i class="icofont-search-1"></i></button>
+        </div>
+        <div class="ms-auto">
+            <a class="btn btn-dark bg-light d-md-none p-3 border-2 rounded-1" data-bs-toggle="collapse" href="#collapse" role="button"><div class="ham position-relative top-50 start-50 translate-middle"></div></a>
+            <div class="d-none d-md-block">
+                <a href="#" class="font-primary d-inline-block header-link me-4"><i class="icofont-ui-file me-1"></i>REGISTER</a>
+                <a href="#" class="font-primary d-inline-block header-link"><i class="icofont-ui-user me-1"></i>LOGIN</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="collapse d-md-none position-fixed w-100 border-bottom border-dark border-2" id="collapse">
+    <div class="bg-light py-4 ps-3">
+        <a href="#" class="font-primary header-link mb-3"><i class="icofont-ui-file me-1"></i>REGISTER</a>
+        <a href="#" class="font-primary header-link"><i class="icofont-ui-user me-1"></i>LOGIN</a>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="checkout">
+                <div class="col-md-8 col-xl-6 mx-auto">
+                    <ol class="d-flex justify-content-between position-relative pay-list mb-4 mb-xl-6">
+                        <li class="font-secondary d-flex flex-column align-items-center"><span
+                                class="d-inline-block bg-dark text-warning fs-5 pay-list-box d-flex justify-content-center align-items-center mb-2">1</span>訂單確認
+                        </li>
+                        <li class="font-secondary d-flex flex-column align-items-center"><span
+                                class="d-inline-block bg-light border border-dark fs-5 pay-list-box d-flex justify-content-center align-items-center mb-2">2</span>結帳付款
+                        </li>
+                        <li class="font-secondary d-flex flex-column align-items-center"><span
+                                class="d-inline-block bg-light border border-dark fs-5 pay-list-box d-flex justify-content-center align-items-center mb-2">3</span>訂購結果
+                        </li>
+                    </ol>
+                    <h2 class="font-secondary checkout-title fw-bold text-center mb-4 mb-xl-5">邪典電影派對—房間</h2>
+                    <div class="border-top border-dark border-2 mb-4 mb-xl-6">
+                        <div class="d-flex justify-content-between border-bottom border-dark py-2">
+                            <p class="font-secondary fw-bold mb-0">日期</p>
+                            <p class="mb-0">2023/5/12</p>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom border-dark py-2">
+                            <p class="font-secondary fw-bold mb-0">票種</p>
+                            <p class="mb-0">驚嚇一整晚(含爆米花)</p>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom border-dark py-2">
+                            <p class="font-secondary fw-bold mb-0">票價</p>
+                            <p class="mb-0">$8000</p>
+                        </div>
+                    </div>
+                    <div class="text-center mb-3">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" class="checkout-sparkler mb-3">
+                        <h3 class="font-secondary h4 fw-bold">聯絡人資料</h3>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">聯絡人姓名</label>
+                        <input type="text"
+                            class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2" id="name"
+                            placeholder="請輸入聯絡人名稱">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email"
+                            class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2" id="email"
+                            placeholder="請輸入Email">
+                    </div>
+                    <div class="mb-4 mb-xl-5">
+                        <label for="tel" class="form-label">手機</label>
+                        <input type="tel"
+                            class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2" id="tel"
+                            placeholder="請輸入手機號碼">
+                    </div>
+                    <button
+                        class="btn btn-dark rounded-0 w-100 w-md-65 fs-5 fw-bold d-flex align-items-center justify-content-center py-2 mx-auto mb-3">確認表單資料<img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABSSURBVHgBpZHRCQAgCESlCRqhTWujRmiERmiUK4kgSAPr4H7eIZxKAOJwHva0SeMcNEzVPdQ4B0EKNf49tFQ07kiWv3JTJXN/PJw18TI4HyfyDreeD/62A8/aAAAAAElFTkSuQmCC" alt="Vector" class="ms-1"></button>
+                    <p class="fs-18 text-center cancel-pay mb-0">取消購票</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="border-top border-dark border-3">
+    <p class="text-center py-4 py-md-5 mb-0">© 7TAO七逃. All Rights Reserved</p>
+</div>
+            
+</body>
+
+</html>

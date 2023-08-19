@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>活動訂票網</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script type="module" crossorigin src="/Event-Booking-Web/assets/bootstrap-686d8bef.js"></script>
+  <link rel="stylesheet" href="/Event-Booking-Web/assets/bootstrap-8292b1e7.css">
+</head>
+
+<body class="bg-light">
+
+  <header class="header border-bottom border-dark border-3">
+    <div class="container d-flex align-items-center">
+        <a href="index.html" class="d-inline-block me-4 me-md-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo"
+                class="d-block header-img img-fluid"></a>
+        <h1 class="h2 font-primary d-none d-md-block d-md-flex align-items-md-center mb-0 me-md-6">7TAO<span
+                class="h6 font-secondary fw-bold mb-0 ms-1">活動訂票網</span></h1>
+        <div class="input-group w-55 w-md-25">
+            <input type="text" class="form-control border-2 border-dark rounded-0" placeholder="探索活動">
+            <button class="btn btn-dark search-icon" type="button"><i class="icofont-search-1"></i></button>
+        </div>
+        <div class="ms-auto">
+            <a class="btn btn-dark bg-light d-md-none p-3 border-2 rounded-1" data-bs-toggle="collapse" href="#collapse" role="button"><div class="ham position-relative top-50 start-50 translate-middle"></div></a>
+            <div class="d-none d-md-block">
+                <a href="#" class="font-primary d-inline-block header-link me-4"><i class="icofont-ui-file me-1"></i>REGISTER</a>
+                <a href="#" class="font-primary d-inline-block header-link"><i class="icofont-ui-user me-1"></i>LOGIN</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="collapse d-md-none position-fixed w-100 border-bottom border-dark border-2" id="collapse">
+    <div class="bg-light py-4 ps-3">
+        <a href="#" class="font-primary header-link mb-3"><i class="icofont-ui-file me-1"></i>REGISTER</a>
+        <a href="#" class="font-primary header-link"><i class="icofont-ui-user me-1"></i>LOGIN</a>
+    </div>
+</div>
+
+    <div class="container">
+      <!-- banner -->
+      <div
+        class="banner bg-size-cover bg-repeat-no mt-3 mt-md-5 mb-5 mb-md-6 d-flex flex-column justify-content-between">
+        <h2 class="d-inline-block font-primary text-white mb-0 banner-date">19 MAY <span
+            class="d-block d-md-inline">2023</span></h2>
+        <div class="text-center mb-4">
+          <h3 class="h4 font-secondary text-white fw-bold mb-0 mb-md-4 mb-md-3">隔牆有耳-沒有草東的派對</h3>
+          <h3 class="h6 text-white mb-0 d-none d-md-block">
+            你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>
+            帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</h3>
+        </div>
+      </div>
+      <!-- 探索更多 -->
+      <ul class="row row-cols-3 row-cols-xl-6 g-2 gx-xl-4 gy-xl-0 mb-5 mb-md-6">
+        <li class="col">
+          <a href="#" class="border border-dark border-2 sort">
+            <div class="d-flex flex-column align-items-center">
+              <img src="/Event-Booking-Web/assets/music-d14422ad.png" alt="音樂icon" class="sort-img">
+              <p class="text-dark font-secondary fs-4 fw-bold mb-0">演出</p>
+            </div>
+          </a>
+        </li>
+        <li class="col">
+          <a href="#" class="border border-dark border-2 sort">
+            <div class="d-flex flex-column align-items-center">
+              <img src="/Event-Booking-Web/assets/love-a31bbcaa.png" alt="愛心icon" class="sort-img">
+              <p class="text-dark font-secondary fs-4 fw-bold mb-0">聯誼</p>
+            </div>
+          </a>
+        </li>
+        <li class="col">
+          <a href="#" class="border border-dark border-2 sort">
+            <div class="d-flex flex-column align-items-center">
+              <img src="/Event-Booking-Web/assets/pic-5ed35a26.png" alt="照片icon" class="sort-img">
+              <p class="text-dark font-secondary fs-4 fw-bold mb-0">展覽</p>
+            </div>
+          </a>
+        </li>
+        <li class="col">
+          <a href="#" class="border border-dark border-2 sort">
+            <div class="d-flex flex-column align-items-center">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADWklEQVR4nO2bS0hVQRjHf1czy5sR1koKguiJBW16EdW2aFXRwnZRKK5MqEWLQmoRkm16LCLCXQsLoghaVC5cBC2EgiDbRAuNUIMosYd6W4w35HYe883jzr15fnBQnJnv/92/59wzM+c7kJEhYQ1wHXgAtAM5g/ZbQD9wGqi1yGUfcBN4Ondst4ilxQrgA1CYd3QL2pcBH0vaLxvmcqMkTgE4axhLm9YI0QlB+4mI9nH+PUvSaI+IY2xAjaDv6oi/NQENmu3NEe0r57Xr0insn4jEAFuk/+ko1gEbHcT5SzkNcMEe1wGrzYDdrgNmBrgO6JE80OI6aDUZsBNY5DqoCwPq534uNWzXxfnpD24c7QUeA6cM23XxYoCEc0TPwGyPvIZ2DhhLieN9JhiSDcAqH4GrxQBvp7/EgGlPORQ0+lSEAV896E8DUxr9nE+Bi0gMeOdBv7g/kMRyYLMHbUBmwBAw6Vj/pUafXdjtHCUiMWAKeORYv1+jj9f7v/QucBW9Ly0d3gNPNPpVlAFDwF1H2p3ATEqfHLDDkZ4zGoE32M3+ejW1tghilm0m+A04CLw1EQRuo5/sekMNbUxngiPAXuCeYMwk0AG0AbOaY3TmCME5Q/rp+Qmze3kj8F0jflmeCyQxEJNU8Wi1iN2VErsiVoMDKe3PLGJfAy4APy1ixOLKgLRr1XYGeQnYahkjkmpZDgOM+ghaTQZ4ITMgdAKhyQwInUBoXD1pGSZ5be9iP3EatY4oZTFqa33YgcbCw7ZooRFVB3QIqEvo9xnoAR4aaCwBzgNH536P4wuqaKrPQMOIBtSSWLIP0CXUqAUGhRo9Fp9JxEVhYgXgB9G1QnG0GWjMIHiMbnMX2G8wph7ZHt8BA40aBLnZGGD6uFtSFZZ0zTvRWPDzgMyA0AmEJjMgdAKhyQwInUBoMgNCJxCazACLsaZ1ArrPBcuiYWPAuOG4sUrSsDHgtcGYWVRtgU8Nm3EiWlBrb8la/blQoxm1hyDRMK1bMKJPkNhvVMm7lCsCjVngsOmHMSEPvNJMrMNQow71YqSOAd0xMbySB+4QfzmMAEcsNepQdUW/YjQmgJMmgV28ylZkE3AM2IbaLR4FXqB2gl0VWK4FjqNek21CVZ4MAvfxU8qb8d/zB3+uYj8Boz49AAAAAElFTkSuQmCC" alt="餐具icon" class="sort-img">
+              <p class="text-dark font-secondary fs-4 fw-bold mb-0">美食</p>
+            </div>
+          </a>
+        </li>
+        <li class="col">
+          <a href="#" class="border border-dark border-2 sort">
+            <div class="d-flex flex-column align-items-center">
+              <img src="/Event-Booking-Web/assets/mountain-f8dd595e.png" alt="山icon" class="sort-img">
+              <p class="text-dark font-secondary fs-4 fw-bold mb-0">戶外</p>
+            </div>
+          </a>
+        </li>
+        <li class="col">
+          <div class="h-100">
+            <a href="#"
+              class="border border-dark border-2 bg-dark w-100 h-100 d-flex justify-content-center align-items-center sort-more">
+              <p class="fs-1 font-secondary fw-bold mb-0">探索<br>更多</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- 近期活動 -->
+      <div
+        class="d-flex justify-content-between align-items-center border border-dark border-3 title-wrapper mb-4 mb-md-5">
+        <h3 class="title font-primary mb-0">RECENT</h3>
+        <h3 class="fs-6 font-secondary fs-md-4 fw-bold mb-0">近期活動</h3>
+      </div>
+      <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 info-section">
+        <li class="col">
+          <div class="mb-4 mb-lg-6">
+            <h3 class="fs-1 font-primary border-bottom border-dark border-3 recent-date">19 MAY 2023</h3>
+            <img src="/Event-Booking-Web/assets/watchTV-14f95265.jpg" alt="看電視" class="img-fluid recent-img w-100">
+            <h4 class="fw-bold font-secondary fs-18 fs-lg-4 recent-title">邪典電影派對——房間</h4>
+            <p>你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，<span
+                class="d-md-none">...</span><span class="d-none d-md-inline">在電影播放的對著螢幕丟湯匙都...</span></p>
+            <div
+              class="d-flex justify-content-between align-items-center border-top border-bottom border-dark border-2 info-intro">
+              <a href="#" class="d-flex align-items-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" class="spark-img me-1">
+                <span class="font-secondary text-black fs-6 social-link">社群活動</span>
+              </a>
+              <a href="checkout.html" class="d-flex align-items-center sell-link position-relative">
+                <span class="text-black fs-6 fw-bold me-1">開賣中</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgBfY2xDYAwDARf0FBmDUrGYJtskIzABoxATZURWIUNwhcvMCHE0knv90kGgEA24vDMqv41nmRyGDmp+8ixkJ1yVV50SNqt7DsjZiOgyHcXGq/jn4Sa1JOJDGQmp/qR7Fa8APobHa29vmSgAAAAAElFTkSuQmCC" alt="vector">
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="col">
+          <div class="mb-4 mb-lg-6">
+            <h3 class="fs-1 font-primary border-bottom border-dark border-3 recent-date">23 MAY 2023</h3>
+            <img src="/Event-Booking-Web/assets/dance-c8a7e0c0.jpg" alt="跳舞" class="img-fluid recent-img w-100">
+            <h4 class="fw-bold font-secondary fs-18 fs-lg-4 recent-title">怪舞俱樂部</h4>
+            <p>覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一<span
+                class="d-md-none">...</span><span class="d-none d-md-inline-block">次的舞會中選出舞步最怪的...</span></p>
+            <div
+              class="d-flex justify-content-between align-items-center border-top border-bottom border-dark border-2 info-intro">
+              <a href="#" class="d-flex align-items-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" class="spark-img me-1">
+                <span class="font-secondary text-black fs-6 social-link">演出</span>
+              </a>
+              <a href="#" class="d-flex align-items-center sell-link position-relative">
+                <span class="text-black fs-6 fw-bold me-1">檢視活動</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgBfY2xDYAwDARf0FBmDUrGYJtskIzABoxATZURWIUNwhcvMCHE0knv90kGgEA24vDMqv41nmRyGDmp+8ixkJ1yVV50SNqt7DsjZiOgyHcXGq/jn4Sa1JOJDGQmp/qR7Fa8APobHa29vmSgAAAAAElFTkSuQmCC" alt="vector">
+              </a>
+            </div>
+        </li>
+        <li class="col">
+          <div class="mb-4 mb-lg-6">
+            <h3 class="fs-1 font-primary border-bottom border-dark border-3 recent-date">30 MAY 2023</h3>
+            <img src="/Event-Booking-Web/assets/movie-4a045f0e.jpg" alt="電影" class="img-fluid recent-img w-100">
+            <h4 class="fw-bold font-secondary fs-18 fs-lg-4 recent-title">哈利波特馬拉松</h4>
+            <p>每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿<span
+                class="d-md-none">...</span><span class="d-none d-md-inline-block">好你的法袍、帶上你的法杖...</span></p>
+            <div
+              class="d-flex justify-content-between align-items-center border-top border-bottom border-dark border-2 info-intro">
+              <a href="#" class="d-flex align-items-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" class="spark-img me-1">
+                <span class="font-secondary text-black fs-6 social-link">聯誼</span>
+              </a>
+              <a href="#" class="d-flex align-items-center sell-link position-relative">
+                <span class="text-black fs-6 fw-bold me-1">開賣中</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgBfY2xDYAwDARf0FBmDUrGYJtskIzABoxATZURWIUNwhcvMCHE0knv90kGgEA24vDMqv41nmRyGDmp+8ixkJ1yVV50SNqt7DsjZiOgyHcXGq/jn4Sa1JOJDGQmp/qR7Fa8APobHa29vmSgAAAAAElFTkSuQmCC" alt="vector">
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="col">
+          <div class="mb-4 mb-lg-0">
+            <h3 class="fs-1 font-primary border-bottom border-dark border-3 recent-date">12 June 2023</h3>
+            <img src="/Event-Booking-Web/assets/ball-d0eeb0aa.jpg" alt="排球" class="img-fluid recent-img w-100">
+            <h4 class="fw-bold font-secondary fs-18 fs-lg-4 recent-title">皮卡丘排球大賽</h4>
+            <p>還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方<span
+                class="d-md-none">...</span><span class="d-none d-md-inline-block">式進行，是時候該證明自己...</span></p>
+            <div
+              class="d-flex justify-content-between align-items-center border-top border-bottom border-dark border-2 info-intro">
+              <a href="#" class="d-flex align-items-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" class="spark-img me-1">
+                <span class="font-secondary text-black fs-6 social-link">遊戲競賽</span>
+              </a>
+              <a href="#" class="d-flex align-items-center sell-link position-relative">
+                <span class="text-black fs-6 fw-bold me-1">開賣中</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgBfY2xDYAwDARf0FBmDUrGYJtskIzABoxATZURWIUNwhcvMCHE0knv90kGgEA24vDMqv41nmRyGDmp+8ixkJ1yVV50SNqt7DsjZiOgyHcXGq/jn4Sa1JOJDGQmp/qR7Fa8APobHa29vmSgAAAAAElFTkSuQmCC" alt="vector">
+              </a>
+            </div>
+        </li>
+        <li class="col">
+          <div class="mb-4 mb-lg-0">
+            <h3 class="fs-1 font-primary border-bottom border-dark border-3 recent-date">25 June 2023</h3>
+            <img src="/Event-Booking-Web/assets/cheers-6c2604a6.jpg" alt="酒精" class="img-fluid recent-img w-100">
+            <h4 class="fw-bold font-secondary fs-18 fs-lg-4 recent-title">酒精路跑</h4>
+            <p>身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極<span
+                class="d-md-none">...</span><span class="d-none d-md-inline-block">具品味的酒吧。</span>
+            </p>
+            <div
+              class="d-flex justify-content-between align-items-center border-top border-bottom border-dark border-2 info-intro">
+              <a href="#" class="d-flex align-items-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" class="spark-img me-1">
+                <span class="font-secondary text-black fs-6 social-link">社群活動</span>
+              </a>
+              <a href="#" class="d-flex align-items-center sell-link position-relative">
+                <span class="text-black fs-6 fw-bold me-1">開賣中</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgBfY2xDYAwDARf0FBmDUrGYJtskIzABoxATZURWIUNwhcvMCHE0knv90kGgEA24vDMqv41nmRyGDmp+8ixkJ1yVV50SNqt7DsjZiOgyHcXGq/jn4Sa1JOJDGQmp/qR7Fa8APobHa29vmSgAAAAAElFTkSuQmCC" alt="vector">
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="col">
+          <div>
+            <h3 class="fs-1 font-primary border-bottom border-dark border-3 recent-date">9 July 2023</h3>
+            <img src="/Event-Booking-Web/assets/room-8506c593.jpg" alt="展覽房間" class="img-fluid recent-img w-100">
+            <h4 class="fw-bold font-secondary fs-18 fs-lg-4 recent-title">展覽——我的房間</h4>
+            <p>每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能<span
+                class="d-md-none">...</span><span class="d-none d-md-inline-block">定義自己的特別的東西。</span>
+            </p>
+            <div
+              class="d-flex justify-content-between align-items-center border-top border-bottom border-dark border-2 info-intro">
+              <a href="#" class="d-flex align-items-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" class="spark-img me-1">
+                <span class="font-secondary text-black fs-6 social-link">展覽</span>
+              </a>
+              <a href="#" class="d-flex align-items-center sell-link position-relative">
+                <span class="text-black fs-6 fw-bold me-1">開賣中</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgBfY2xDYAwDARf0FBmDUrGYJtskIzABoxATZURWIUNwhcvMCHE0knv90kGgEA24vDMqv41nmRyGDmp+8ixkJ1yVV50SNqt7DsjZiOgyHcXGq/jn4Sa1JOJDGQmp/qR7Fa8APobHa29vmSgAAAAAElFTkSuQmCC" alt="vector">
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- 線上活動 -->
+      <div
+        class="d-flex justify-content-between align-items-center border border-dark border-3 title-wrapper mb-4 mb-md-5">
+        <h3 class="title font-primary mb-0">ONLINE</h3>
+        <h3 class="fs-6 font-secondary fs-md-4 fw-bold mb-0">線上活動</h3>
+      </div>
+      <div class="d-flex flex-column flex-lg-row justify-content-lg-between info-section">
+        <img src="/Event-Booking-Web/assets/gpt-fe4a9a77.jpg" alt="gpt" class="online-img w-lg-57">
+        <div class="w-lg-40 d-flex flex-column justify-content-between">
+          <div>
+            <h3 class="fs-18 fs-lg-4 font-secondary text-black fw-bold mb-2 mb-lg-3">切特居批踢</h3>
+            <div class="d-flex ms-1">
+              <a href="#"
+                class="font-secondary fw-bold py-1 px-4 border border-black me-2 online-link position-relative mb-lg-5">競賽</a>
+              <a href="#"
+                class="font-secondary fw-bold py-1 px-4 border border-black me-2 online-link position-relative mb-lg-5">科技</a>
+              <a href="#"
+                class="font-secondary fw-bold py-1 px-4 border border-black online-link position-relative mb-lg-5">有趣</a>
+            </div>
+            <p class="online-info">最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>
+              這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>
+              該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
+          </div>
+          <button
+            class="btn btn-dark rounded-0 w-100 fs-5 fw-bold d-flex align-items-center justify-content-center py-2">查看活動詳情<img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABSSURBVHgBpZHRCQAgCESlCRqhTWujRmiERmiUK4kgSAPr4H7eIZxKAOJwHva0SeMcNEzVPdQ4B0EKNf49tFQ07kiWv3JTJXN/PJw18TI4HyfyDreeD/62A8/aAAAAAElFTkSuQmCC" alt="Vector" class="ms-1"></button>
+        </div>
+      </div>
+    </div>
+    <!-- 跑馬燈 -->
+    <div class="swiper bg-black mb-6">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-black h2 text-warning font-secondary py-3 py-lg-4 mb-0">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+        <div class="swiper-slide bg-black h2 text-warning font-secondary py-3 py-lg-4 mb-0">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+        <div class="swiper-slide bg-black h2 text-warning font-secondary py-3 py-lg-4 mb-0">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      </div>
+    </div>
+    <!-- 各種活動 -->
+    <div class="container mb-6 overflow-hidden overflow-md-visible">
+      <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-md-between activity">
+        <li class="col">
+          <div
+            class="card w-80 w-lg-100 mx-auto bg-light rounded-0 border border-dark border-2 px-3 pt-3 position-relative mt-4 mb-6 mt-md-0 mb-lg-0">
+            <span
+              class="font-secondary fw-bold bg-white position-absolute top-0 start-50 span-transform py-2 px-3">社群活動</span>
+            <img src="/Event-Booking-Web/assets/party-69833549.jpg" alt="跳舞" class="img-fluid activity-img">
+            <p class="font-secondary fw-bold activity-intro pt-3 pb-6 mb-0">無聲派對-閉閉嘴dancing</p>
+          </div>
+        </li>
+        <li class="col">
+          <div
+            class="card w-80 w-lg-100 mx-auto bg-light rounded-0 border border-dark border-2 px-3 pt-3 position-relative mb-6 mb-lg-0">
+            <span
+              class="font-secondary fw-bold bg-white position-absolute top-0 start-50 span-transform py-2 px-3">藝文活動</span>
+            <img src="/Event-Booking-Web/assets/store-4ea8adb9.jpg" alt="商店" class="img-fluid activity-img">
+            <p class="font-secondary fw-bold activity-intro pt-3 pb-6 mb-0">拯救老店大作戰</p>
+          </div>
+        </li>
+        <li class="col">
+          <div
+            class="card w-80 w-lg-100 mx-auto bg-light rounded-0 border border-dark border-2 px-3 pt-3 position-relative mb-6 mb-md-0">
+            <span
+              class="font-secondary fw-bold bg-white position-absolute top-0 start-50 span-transform py-2 px-3">自我覺察</span>
+            <img src="/Event-Booking-Web/assets/kids-24acffc0.jpg" alt="小孩" class="img-fluid activity-img">
+            <p class="font-secondary fw-bold activity-intro pt-3 pb-6 mb-0">內觀修行-部落篇</p>
+          </div>
+        </li>
+        <li class="col">
+          <div
+            class="card w-80 w-lg-100 mx-auto bg-light rounded-0 border border-dark border-2 px-3 pt-3 position-relative mb-2 mb-md-0">
+            <span
+              class="font-secondary fw-bold bg-white position-absolute top-0 start-50 span-transform py-2 px-3">聯誼活動</span>
+            <img src="/Event-Booking-Web/assets/sakura-a72b863b.jpg" alt="櫻花" class="img-fluid activity-img">
+            <p class="font-secondary fw-bold activity-intro pt-3 pb-6 mb-0">賞櫻野餐</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 跑馬燈 -->
+    <div class="swiper bg-black">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-black h2 text-warning font-secondary py-3 py-lg-4 mb-0">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+        <div class="swiper-slide bg-black h2 text-warning font-secondary py-3 py-lg-4 mb-0">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+        <div class="swiper-slide bg-black h2 text-warning font-secondary py-3 py-lg-4 mb-0">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      </div>
+    </div>
+    <!-- 聯絡我們 -->
+    <div class="container">
+      <div class="contact">
+        <ul class="row row-cols-1 row-cols-md-2 gy-4 gy-md-0 gx-md-0">
+          <li class="col">
+            <div class="card rounded-0 bg-light border border-dark border-2 border-margin h-100">
+              <h2 class="font-secondary fw-bold contact-title ps-lg-5 py-3 border-bottom border-dark border-2 mb-0">#FOLLOW
+                US</h2>
+              <div class="p-lg-5 contact-info">
+                <p class="mb-3 mb-lg-5">想第一時間獲得新奇有趣的活動資訊？<br>
+                  追蹤我們的社群吧！<br>
+                  也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
+                <a href="mailto:7tao.event@gmail.com" class="d-flex align-items-center contact-link mb-3"><span
+                    class="d-inline-block d-flex justify-content-center align-items-center me-3"><i
+                      class="icofont-ui-email text-white"></i></span>7tao.event@gmail.com</a>
+                <a href="tel:+886-9123123123" class="d-flex align-items-center contact-link mb-3"><span
+                    class="d-inline-block d-flex justify-content-center align-items-center me-3"><i
+                      class="icofont-phone text-white"></i></span>09123123123</a>
+                <a href="#" class="d-flex align-items-center contact-link"><span
+                    class="d-inline-block d-flex justify-content-center align-items-center me-3"><i
+                      class="icofont-facebook text-white"></i></span>7TAO七逃</a>
+              </div>
+            </div>
+          </li>
+          <li class="col">
+            <div class="card rounded-0 bg-light border border-dark border-2 h-100">
+              <h2 class="font-secondary fw-bold contact-title ps-lg-5 py-3 border-bottom border-dark border-2 mb-0">
+                #SUBSCRIBE US</h2>
+              <div class="p-lg-5 pb-md-0 contact-info">
+                <p class="mb-3 mb-lg-5">訂閱電子報送折價券！<br>
+                  定期精選文章資訊及最新優惠資訊，<br>
+                  還不通通給我訂閱起來？</p>
+                <input type="text" class="w-100 bg-light border-dark py-3 ps-4" placeholder="輸入Email">
+              </div>
+              <button
+                class="btn btn-dark rounded-0 w-100 fs-5 fw-bold subscribe-check d-flex align-items-center justify-content-center py-2 mt-auto">確認訂閱<img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABSSURBVHgBpZHRCQAgCESlCRqhTWujRmiERmiUK4kgSAPr4H7eIZxKAOJwHva0SeMcNEzVPdQ4B0EKNf49tFQ07kiWv3JTJXN/PJw18TI4HyfyDreeD/62A8/aAAAAAElFTkSuQmCC" alt="Vector" class="ms-1"></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- slogan -->
+    <div class="border-top border-dark border-3 slogan">
+      <p class="slogan-title font-secondary fw-bold text-center mb-lg-3">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+      <p class="slogan-subtitle font-secondary fw-bold text-center mb-0">——我也不知道誰說的</p>
+    </div>
+    <div class="border-top border-dark border-3">
+    <p class="text-center py-4 py-md-5 mb-0">© 7TAO七逃. All Rights Reserved</p>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        allowTouchMove: false,
+        slidesPerView: "auto",//能呈現幾個.swiper-slide
+        speed: 8000,
+        loop: true,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false
+        }
+      });
+    </script>
+</body>
+
+</html>
