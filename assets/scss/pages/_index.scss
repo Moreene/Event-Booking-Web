@@ -1,0 +1,286 @@
+// banner
+.banner {
+    height: 350px;
+    background-image: url('../images/banner.jpg');
+    background-position: center bottom;
+
+
+    @include pad {
+        height: 518px;
+        background-position: center center;
+    }
+
+    &-date {
+        font-size: 32px;
+        padding: 16px 0 0 40px;
+
+        @include pad {
+            font-size: 60px;
+            padding: 48px 0 0 48px;
+        }
+    }
+}
+
+// 探索更多
+.sort {
+    padding: 14px 30px;
+
+    @include pc-xl {
+        padding: 32px 58px;
+    }
+
+    &:hover {
+        background-color: $warning;
+    }
+
+
+    &-img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 8px;
+
+        @include pad {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &-more {
+        color: $warning;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+// 近期活動
+.title {
+    font-size: 24px;
+
+    @include pad {
+        font-size: 64px;
+    }
+
+    &-wrapper {
+        padding: 16px 12px;
+
+        @include pad {
+            padding: 20px 32px;
+        }
+    }
+}
+
+.recent {
+    &-date {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    &-img {
+        height: 210px;
+        margin-bottom: 8px;
+
+        @include pc {
+            height: 255px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &-title {
+        margin-bottom: 8px;
+
+        @include pc {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.info-intro {
+    padding: 8px 0;
+
+    @include pc {
+        padding: 12px 0;
+    }
+}
+
+.spark-img {
+    width: 20px;
+    height: 20px;
+
+    @include pc {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.sell-link:hover {
+    &::after {
+        position: absolute;
+        content: '';
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        top: -3px;
+        left: -12px;
+        background-color: $warning;
+        z-index: -1;
+    }
+}
+
+// 近期活動
+.online {
+    &-img {
+        height: 158px;
+        object-position: center 35%;
+        margin-bottom: 12px;
+
+        @include pc {
+            height: 317px;
+            margin-bottom: 0;
+        }
+    }
+
+    &-link {
+        color: $dark;
+        margin-bottom: 12px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: -4px;
+            top: -1px;
+            width: 4px;
+            height: 34px;
+            background-color: $black;
+        }
+
+        &:hover {
+            background-color: $dark;
+            color: $white;
+
+            &::after {
+                background-color: $warning;
+            }
+        }
+    }
+
+    &-info {
+        margin-bottom: 12px;
+    }
+}
+
+// swiper
+.swiper-wrapper {
+    transition-timing-function: linear; //均速效果
+}
+
+.swiper-slide {
+    letter-spacing: 3.2px;
+    width: auto;
+}
+
+// 這種活動
+.activity {
+    li {
+        &:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-2deg);
+        }
+    }
+
+    &-img {
+        height: 267px;
+
+        @include pc {
+            height: 274px;
+        }
+    }
+
+    &-info {
+        padding: 12px 0 32px 0;
+    }
+}
+
+.span-transform {
+    transform: translate(-50%, -50%) rotate(-4deg);
+}
+
+// 聯絡我們
+.contact {
+    padding: 32px 0 48px 0;
+
+    @include pc {
+        padding: 60px 0;
+    }
+
+    &-link {
+        color: $black;
+
+        span {
+            width: 32px;
+            height: 32px;
+            background-color: $black;
+        }
+
+        &:hover {
+            color: $danger;
+
+            span {
+                background-color: $danger;
+            }
+        }
+    }
+
+    &-title {
+        padding-left: 12px;
+    }
+
+    &-info {
+        padding: 16px 12px 16px 12px;
+    }
+}
+
+.subscribe-check::placeholder{
+    color:$gray-700;
+}
+
+.border-margin {
+    @include pad {
+        margin-right: -2px;
+    }
+}
+
+// slogan
+.slogan {
+    padding: 48px 0;
+
+    @include pad {
+        padding: 60px 0;
+    }
+
+    &-title {
+        font-style: 18px;
+        margin-bottom: 12px;
+
+        @include pad {
+            font-size: 32px;
+        }
+    }
+
+    &-subtitle {
+        font-size: 14px;
+
+        @include pad {
+            font-size: 18px;
+        }
+    }
+}

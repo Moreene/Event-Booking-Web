@@ -1,0 +1,7 @@
+.info-section {
+    margin-bottom: 32px;
+
+    @include pc {
+        margin-bottom: 60px;
+    }
+}
