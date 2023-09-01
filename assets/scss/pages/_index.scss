@@ -176,8 +176,9 @@
 }
 
 // swiper
-.swiper-wrapper {
+.mySwiper .swiper-wrapper {
     transition-timing-function: linear; //均速效果
+    
 }
 
 .swiper-slide {
