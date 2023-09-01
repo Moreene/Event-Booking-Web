@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>活動訂票網</title>
-  <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.css">
 </head>
 
 <body class="bg-light">
@@ -347,20 +346,8 @@
     </div>
     <%- include('./layout/footer') %>
 
-      <script src="../node_modules/swiper/swiper-bundle.js"></script>
+      <script type="module" src="../assets/js/swiper.js"></script>
       <script type="module" src="../main.js"></script>
-      <script>
-        const swiper = new Swiper(".mySwiper", {
-          allowTouchMove: false,
-          slidesPerView: "auto",//能呈現幾個.swiper-slide
-          speed: 8000,
-          loop: true,
-          autoplay: {
-            delay: 0,
-            disableOnInteraction: false
-          }
-        });
-      </script>
 </body>
 
 </html>
