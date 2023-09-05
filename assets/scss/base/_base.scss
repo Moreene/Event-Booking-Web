@@ -23,3 +23,9 @@ ol {
 li {
     list-style: none;
 }
+
+button:hover {
+    svg path {
+        fill: $warning;
+    }
+}

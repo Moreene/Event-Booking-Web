@@ -737,7 +737,7 @@ $table-cell-padding-x-sm:     .25rem !default;
 $table-cell-vertical-align:   top !default;
 
 $table-color:                 var(--#{$prefix}body-color) !default;
-$table-bg:                    var(--#{$prefix}body-bg) !default;
+$table-bg:                    $light;//var(--#{$prefix}body-bg) !default; customer
 $table-accent-bg:             transparent !default;
 
 $table-th-font-weight:        null !default;
@@ -756,7 +756,7 @@ $table-hover-bg:              rgba($black, $table-hover-bg-factor) !default;
 
 $table-border-factor:         .1 !default;
 $table-border-width:          var(--#{$prefix}border-width) !default;
-$table-border-color:          var(--#{$prefix}border-color) !default;
+$table-border-color:          $dark;//var(--#{$prefix}border-color) !default; customer
 
 $table-striped-order:         odd !default;
 $table-striped-columns-order: even !default;

@@ -1,0 +1,9 @@
+.lh-32 {
+    line-height: 32px;
+}
+
+.lh-md-60 {
+    @include pad {
+        line-height: 60px;
+    }
+}

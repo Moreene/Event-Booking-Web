@@ -28,46 +28,55 @@
                         </li>
                     </ol>
                     <h2 class="font-secondary checkout-title fw-bold text-center mb-4 mb-xl-5">邪典電影派對—房間</h2>
-                    <div class="border-top border-dark border-2 mb-4 mb-xl-6">
-                        <div class="d-flex justify-content-between border-bottom border-dark py-2">
-                            <p class="font-secondary fw-bold mb-0">日期</p>
-                            <p class="mb-0">2023/5/12</p>
-                        </div>
-                        <div class="d-flex justify-content-between border-bottom border-dark py-2">
-                            <p class="font-secondary fw-bold mb-0">票種</p>
-                            <p class="mb-0">驚嚇一整晚(含爆米花)</p>
-                        </div>
-                        <div class="d-flex justify-content-between border-bottom border-dark py-2">
-                            <p class="font-secondary fw-bold mb-0">票價</p>
-                            <p class="mb-0">$8000</p>
-                        </div>
-                    </div>
+                    <table class="table border-top border-dark border-2 mb-4 mb-xl-6">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="font-secondary">日期</th>
+                                <td class="d-flex"><span class="ms-auto">2023/5/12</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="font-secondary">票種</th>
+                                <td class="d-flex"><span class="ms-auto">驚嚇一整晚(含爆米花)</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="font-secondary">票價</th>
+                                <td class="d-flex"><span class="ms-auto">$8000</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="text-center mb-3">
                         <img src="../assets/images/sparkler.png" alt="sparkler" class="checkout-sparkler mb-3">
                         <h3 class="font-secondary h4 fw-bold">聯絡人資料</h3>
                     </div>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">聯絡人姓名</label>
-                        <input type="text"
-                            class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2" id="name"
-                            placeholder="請輸入聯絡人名稱">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email"
-                            class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2" id="email"
-                            placeholder="請輸入Email">
-                    </div>
-                    <div class="mb-4 mb-xl-5">
-                        <label for="tel" class="form-label">手機</label>
-                        <input type="tel"
-                            class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2" id="tel"
-                            placeholder="請輸入手機號碼">
-                    </div>
-                    <button
-                        class="btn btn-dark rounded-0 w-100 w-md-65 fs-5 fw-bold d-flex align-items-center justify-content-center py-2 mx-auto mb-3">確認表單資料<img
-                            src="../assets/images/Vector-white.png" alt="Vector" class="ms-1"></button>
-                    <p class="fs-18 text-center cancel-pay mb-0">取消購票</p>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">聯絡人姓名</label>
+                            <input type="text"
+                                class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2"
+                                id="name" placeholder="請輸入聯絡人名稱">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email"
+                                class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2"
+                                id="email" placeholder="請輸入Email">
+                        </div>
+                        <div class="mb-4 mb-xl-5">
+                            <label for="tel" class="form-label">手機</label>
+                            <input type="tel"
+                                class="form-control bg-light contact-input rounded-0 border-dark border-2 py-2" id="tel"
+                                placeholder="請輸入手機號碼">
+                        </div>
+                        <button
+                            class="btn btn-dark rounded-0 w-100 w-md-65 fs-5 fw-bold d-flex align-items-center justify-content-center py-2 mx-auto mb-3"
+                            type="submit">確認表單資料<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10"
+                                viewBox="0 0 12 10" fill="none" class="ms-2">
+                                <path
+                                    d="M11.768 4.43999L7.70401 0.375994C7.39401 0.0659936 6.89201 0.0659936 6.58201 0.375994L6.23201 0.725994C5.92201 1.03599 5.92201 1.53799 6.23201 1.84799L8.82601 4.44199C8.98201 4.59799 9.05801 4.79999 9.05801 5.00199C9.05801 5.20399 8.98001 5.40799 8.82601 5.56199L6.23201 8.15599C5.92201 8.46599 5.92201 8.96799 6.23201 9.278L6.58201 9.628C6.89201 9.934 7.39401 9.934 7.70401 9.62399L11.768 5.55999C11.924 5.40399 12 5.20199 12 4.99999C12 4.79799 11.922 4.59399 11.768 4.43999ZM5.76801 4.43999L1.70401 0.375994C1.39401 0.0659936 0.892012 0.0659936 0.582012 0.375994L0.232012 0.725994C-0.0779883 1.03599 -0.0779883 1.53799 0.232012 1.84799L2.82601 4.44199C2.98201 4.59799 3.05801 4.79999 3.05801 5.00199C3.05801 5.20399 2.98001 5.40799 2.82601 5.56199L0.232012 8.15599C-0.0779883 8.46599 -0.0779883 8.96799 0.232012 9.278L0.582012 9.628C0.892012 9.934 1.39401 9.934 1.70401 9.62399L5.76801 5.55999C5.92401 5.40399 6.00001 5.20199 6.00001 4.99999C6.00001 4.79799 5.92201 4.59399 5.76801 4.43999Z"
+                                    fill="white" />
+                            </svg></button>
+                    </form>
+                    <a class="fs-18 text-center cancel-pay mb-0" href="#">取消購票</a>
                 </div>
             </div>
         </div>

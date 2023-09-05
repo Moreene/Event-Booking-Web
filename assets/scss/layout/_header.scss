@@ -17,16 +17,25 @@
 
     &-link {
         color: $dark;
+        font-size: 18px;
 
         &:hover,
         &:active {
             color: $success;
         }
     }
-}
 
-.search-icon:hover {
-    color: $warning;
+    input {
+        padding: 8px 0 8px 12px;
+
+        @include pc {
+            padding: 14px 0 14px 24px;
+        }
+
+        &::placeholder {
+            color: $secondary;
+        }
+    }
 }
 
 .ham {
@@ -57,6 +66,6 @@
     }
 }
 
-.collapse{
+.collapse {
     z-index: 2;
 }
